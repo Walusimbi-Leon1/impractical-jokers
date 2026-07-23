@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Impractical Jokers: The Definitive Guide | SGSS Books</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@300;400;700;900&family=Playfair+Display:wght@400;700;900&display=swap" rel="stylesheet">
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body { font-family: 'Merriweather', Georgia, serif; background: #0d0907; color: #f5f0e8; min-height: 100vh; }
+
+        /* Hero */
+        .hero {
+            min-height: 100vh;
+            display: flex; align-items: center; justify-content: center;
+            text-align: center; padding: 40px 20px;
+            background: linear-gradient(135deg, #0d0907 0%, #1a120e 40%, #2c1810 70%, #3d2b1f 100%);
+            position: relative; overflow: hidden;
+        }
+        .hero::before {
+            content: '';
+            position: absolute; top: 0; left: 0; right: 0; bottom: 0;
+            background: radial-gradient(ellipse at 30% 50%, rgba(201,169,110,0.08) 0%, transparent 60%),
+                        radial-gradient(ellipse at 70% 30%, rgba(201,169,110,0.05) 0%, transparent 50%);
+        }
+        .hero-content { position: relative; z-index: 1; max-width: 700px; }
+        .hero-badge {
+            display: inline-block; padding: 8px 24px; border: 1px solid #c9a96e;
+            border-radius: 30px; font-size: 0.75em; letter-spacing: 4px;
+            text-transform: uppercase; color: #c9a96e; margin-bottom: 30px;
+        }
+        .hero h1 {
+            font-family: 'Playfair Display', serif; font-size: 3.5em;
+            font-weight: 900; line-height: 1.1; margin-bottom: 15px;
+            background: linear-gradient(135deg, #f5f0e8, #c9a96e);
+            -webkit-background-clip: text; -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+        .hero .subtitle {
+            font-size: 1.15em; color: #a89880; font-style: italic;
+            margin-bottom: 10px; line-height: 1.6;
+        }
+        .hero .tagline {
+            font-size: 0.95em; color: #7a6b5a; margin-bottom: 40px;
+        }
+        .hero-buttons { display: flex; gap: 16px; justify-content: center; flex-wrap: wrap; }
+        .btn {
+            display: inline-block; padding: 16px 40px; text-decoration: none;
+            border-radius: 50px; font-weight: 700; font-size: 0.95em;
+            letter-spacing: 1px; transition: all 0.3s;
+        }
+        .btn-primary {
+            background: linear-gradient(135deg, #c9a96e, #a88a50);
+            color: #1a0f0a; box-shadow: 0 4px 20px rgba(201,169,110,0.3);
+        }
+        .btn-primary:hover { transform: translateY(-3px); box-shadow: 0 8px 30px rgba(201,169,110,0.4); }
+        .btn-secondary {
+            border: 2px solid #c9a96e; color: #c9a96e; background: transparent;
+        }
+        .btn-secondary:hover { background: rgba(201,169,110,0.1); transform: translateY(-2px); }
+
+        /* About */
+        .about { padding: 100px 20px; background: #faf8f5; color: #1a1a1a; }
+        .about-inner { max-width: 750px; margin: 0 auto; }
+        .about h2 {
+            font-family: 'Playfair Display', serif; font-size: 2.2em;
+            color: #2c1810; margin-bottom: 30px; text-align: center;
+        }
+        .about p {
+            font-size: 1.05em; line-height: 1.9; color: #3d2b1f;
+            margin-bottom: 20px; text-align: justify;
+        }
+        .about .highlight {
+            background: #f5f0e8; border-left: 4px solid #c9a96e;
+            padding: 20px 25px; margin: 30px 0; border-radius: 0 8px 8px 0;
+        }
+        .about .highlight p { margin-bottom: 0; font-style: italic; color: #5a3825; }
+
+        /* Stats */
+        .stats {
+            display: grid; grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+            gap: 30px; padding: 60px 20px; background: #1a120e;
+        }
+        .stat { text-align: center; }
+        .stat-number {
+            font-family: 'Playfair Display', serif; font-size: 2.8em;
+            font-weight: 900; color: #c9a96e;
+        }
+        .stat-label { font-size: 0.85em; color: #8b7355; margin-top: 5px; letter-spacing: 1px; }
+
+        /* Footer */
+        footer {
+            text-align: center; padding: 50px 20px;
+            background: #0d0907; border-top: 1px solid #2c1810;
+        }
+        footer p { color: #6b5344; font-size: 0.85em; margin: 8px 0; }
+        footer a { color: #c9a96e; text-decoration: none; }
+        footer a:hover { text-decoration: underline; }
+        .sgss { margin-top: 20px; }
+        .sgss-label {
+            display: inline-block; padding: 8px 20px;
+            border: 1px solid #3d2b1f; border-radius: 30px;
+            color: #6b5344; font-size: 0.75em; letter-spacing: 3px;
+            text-transform: uppercase;
+        }
+
+        @media (max-width: 600px) {
+            .hero h1 { font-size: 2.2em; }
+            .hero .subtitle { font-size: 1em; }
+            .about h2 { font-size: 1.6em; }
+        }
+    </style>
+</head>
+<body>
+
+<div class="hero">
+    <div class="hero-content">
+        <div class="hero-badge">SGSS Books</div>
+        <h1>Impractical Jokers</h1>
+        <div class="subtitle">The Definitive Guide to Television's Funniest Show</div>
+        <p class="tagline">An unofficial biography of comedy's greatest friendship — 15 chapters, 20,000+ words, one incredible story.</p>
+        <div class="hero-buttons">
+            <a href="v1.0/book.html" class="btn btn-primary">📖 Read Online</a>
+            <a href="https://walusimbi-leon1.github.io/voice-support/" class="btn btn-secondary" target="_blank">❤️ Support Us</a>
+        </div>
+    </div>
+</div>
+
+<div class="about">
+    <div class="about-inner">
+        <h2>About This Book</h2>
+        <p>Impractical Jokers premiered on December 15, 2011, and quickly became the most popular program on TruTV. What started as a simple hidden-camera show evolved into a global comedy phenomenon — a show about four lifelong friends from Staten Island who compete to embarrass each other in front of unsuspecting strangers.</p>
+        <div class="highlight">
+            <p>"We wanted to utilize our improv strengths... put ourselves into a situation where we know we can be funny and also ourselves. If we're ourselves and also showcase our friendship, something might resonate there." — Sal Vulcano</p>
+        </div>
+        <p>This book tells the complete story of Impractical Jokers — from the origins of The Tenderloins comedy troupe at Monsignor Farrell High School, through twelve seasons of television and a feature film, to the show's evolution after Joe Gatto's departure. We explore each Joker individually, dissect the show's format and philosophy, celebrate the fan community, and examine the show's lasting impact on comedy television.</p>
+        <p>Whether you're a lifelong fan or discovering the show for the first time, this guide offers a deep dive into everything that makes Impractical Jokers one of the most genuinely funny and heartwarming shows ever made.</p>
+    </div>
+</div>
+
+<div class="stats">
+    <div class="stat">
+        <div class="stat-number">287</div>
+        <div class="stat-label">Episodes</div>
+    </div>
+    <div class="stat">
+        <div class="stat-number">12</div>
+        <div class="stat-label">Seasons</div>
+    </div>
+    <div class="stat">
+        <div class="stat-number">4</div>
+        <div class="stat-label">Jokers</div>
+    </div>
+    <div class="stat">
+        <div class="stat-number">30+</div>
+        <div class="stat-label">Years of Friendship</div>
+    </div>
+</div>
+
+<footer>
+    <p><strong>Impractical Jokers: The Definitive Guide</strong></p>
+    <p>An unofficial fan book by SGSS | &copy; 2025</p>
+    <p>Impractical Jokers is a trademark of TruTV/Warner Bros. Discovery.</p>
+    <div class="sgss"><span class="sgss-label">SGSS</span></div>
+</footer>
+
+</body>
+</html>
