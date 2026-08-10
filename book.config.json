@@ -1,0 +1,17 @@
+{
+  "title": "Impractical Jokers",
+  "subtitle": "The Definitive Guide",
+  "genre": "TV companion",
+  "author": "Walusimbi Leon (SGSS)",
+  "description": "The definitive guide to television's funniest show — the four friends, the challenges, the punishments, and the legacy of Impractical Jokers.",
+  "style": "Warm, funny, knowledgeable prose. Fan-friendly and detailed.",
+  "characters": "Joe, Sal, Q, and Murr — the four jokers.",
+  "setting": "New York and the hidden-camera world of the show.",
+  "notes": "Continue the guide in order: the origins, the challenges and punishments, the best moments, the departures and the legacy.",
+  "chapterTitle": "Chapter",
+  "mdFiles": ["v1.0/book.html"],
+  "htmlFiles": [],
+  "indexInject": null,
+  "mdHeadingLevel": 2,
+  "targetWords": 2000
+}
